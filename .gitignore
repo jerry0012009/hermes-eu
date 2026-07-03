@@ -1,0 +1,67 @@
+# Sensitive files - DO NOT commit API keys
+.env
+auth.json
+*.key
+*.pem
+
+# Session databases (large, not needed for backup)
+sessions/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Cache and temp files
+cache/
+.tmp/
+tmp/
+__pycache__/
+*.pyc
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Kanban locks
+kanban/.dispatcher.lock
+
+# Backups (too large)
+backups/
+
+# Shell snapshots
+shell_snapshots/
+
+# Node.js installation (can be re-downloaded)
+node/
+
+# Skills (can be re-synced with hermes setup)
+skills/
+
+# Binary tools
+bin/
+
+# Kanban database
+kanban.db
+kanban.db.*
+
+# State databases
+state.db
+state.db-*
+
+# Gateway runtime files
+gateway.lock
+gateway.pid
+gateway_state.json
+channel_directory.json
+gateway/
+
+# Cron runtime
+cron/
+
+# Update check
+.update_check
+
+# Config backup
+config.yaml.backup
